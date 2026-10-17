@@ -1,0 +1,13 @@
+{
+  "name": "ai-email-quote-agent",
+  "version": "1.0.0",
+  "description": "n8n email quoting agent: the LLM classifies and extracts dimensions, a deterministic calculator prices, the owner approves. Thread memory, drawings via a vision model.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build-workflow.mjs",
+    "test": "node scripts/build-workflow.mjs --check && node --test test/calculator.test.mjs test/thread.test.mjs test/format.test.mjs test/vision.test.mjs test/workflow.test.mjs",
+    "demo": "node bin/demo.mjs"
+  }
+}

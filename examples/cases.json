@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Two blackout blinds and an insect screen, customer installs them",
+    "email": "Dzień dobry, proszę o wycenę: dwie rolety zaciemniające 120 x 150 cm do sypialni i moskitiera 60 x 120 cm. Zamontuję sam.",
+    "parser": { "produkty": [
+      { "typ": "roleta", "etykieta": "sypialnia", "ilosc": 2, "szer": 1.2, "wys": 1.5, "tkanina": "B" },
+      { "typ": "moskitiera", "etykieta": "moskitiera", "ilosc": 1, "szer": 0.6, "wys": 1.2 }
+    ], "montaz_sygnal": "sam", "brak_danych": null }
+  },
+  {
+    "name": "Small insect screen: small-format surcharge and the minimum price",
+    "email": "Ile kosztuje moskitiera do małego okienka w łazience, 40 x 50 cm?",
+    "parser": { "produkty": [ { "typ": "moskitiera", "etykieta": "łazienka", "ilosc": 1, "szer": 0.4, "wys": 0.5 } ], "montaz_sygnal": "brak", "brak_danych": null }
+  },
+  {
+    "name": "Motorised blind in a cassette plus a pleated blind without a height",
+    "email": "Roleta w kasecie z silnikiem 200 x 180 cm do salonu oraz plisa do kuchni, szerokość 80 cm.",
+    "parser": { "produkty": [
+      { "typ": "roleta", "etykieta": "salon", "ilosc": 1, "szer": 2.0, "wys": 1.8, "kaseta": true, "naped": "silnik" },
+      { "typ": "plisa", "etykieta": "kuchnia", "ilosc": 1, "szer": 0.8 }
+    ], "montaz_sygnal": "brak", "brak_danych": null }
+  },
+  {
+    "name": "A product the business does not make",
+    "email": "Czy robicie żaluzje drewniane na wymiar?",
+    "parser": { "produkty": [ { "typ": "zaluzja_drewniana", "etykieta": "żaluzja", "ilosc": 1 } ], "montaz_sygnal": "brak", "brak_danych": null }
+  },
+  {
+    "name": "The parser could not read anything: ask instead of guessing",
+    "email": "Dzień dobry, interesują mnie rolety do całego domu, proszę o ofertę.",
+    "parser": { "produkty": [], "montaz_sygnal": "brak", "brak_danych": "Proszę podać liczbę okien oraz szerokość i wysokość każdej rolety." }
+  }
+]
